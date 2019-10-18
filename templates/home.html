@@ -1,0 +1,13 @@
+<h1>这是主页</h1>
+<h2>1.创建项目在Gitkraken和django的命令行，记得剪切</h2>
+<h2>2.依次写路由，views.py(原function.py)，创建templates文件夹和home.html</h2>
+<h2>3.创建templates记得在setting中</h2>
+<h2>4.命令行创建APP(一个单个的小功能)，在admin中注册from后admin.site.register(Gallery)</h2>
+<h2>5.记得在setting中登记自己编写的APP</h2>
+<h2>6.数据库迁移。不会就用help</h2>
+<h2>7.创建管理员，创建一个Gallery实例</h2>
+<h2>8.为了要在前端html中显示，首先要在views中from并render字典参数</h2>
+<h2>9.前端html中for循环gallerys.all。因为不止一个实例对象。</h2>
+{% for gallery in gallerys.all %}
+{{ gallery.description }}
+{% endfor %}
