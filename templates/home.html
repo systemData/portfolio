@@ -10,4 +10,9 @@
 <h2>9.前端html中for循环gallerys.all。因为不止一个实例对象。</h2>
 {% for gallery in gallerys.all %}
 {{ gallery.description }}
+<img src="{{ gallery.image.url }}">
 {% endfor %}
+<h2>1.更新Model添加title和image要重新迁移数据库</h2>
+<h2>2.想要显示图片，在settings中添加MEDIA_URL和MEDIA_ROOT</h2>
+<h2>3.在urls路由中导入static</h2>
+<h2>4.前端中是gallery.image.url有.url(是不是之前的那个images文件夹已经可以删了)</h2>
